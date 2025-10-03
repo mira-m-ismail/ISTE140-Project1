@@ -1,0 +1,116 @@
+html {  /* base style */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.page-container {
+    margin: 0 auto;
+    background: #F0F3F5;
+    min-height: 100vh; /* full viewport height */
+    box-sizing: border-box;
+}
+/* header */
+#site-header {
+    top: 0;
+    position: sticky;
+    width: 100% !important;
+}
+.logo {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    border: 2px solid #F0F3F5;
+}
+.logo-container {
+    padding: 1rem;
+}
+.inner-header {
+    background: #7B2D26;
+    padding: 1rem 2rem; /* this means top/bottom, left/right */
+    overflow: hidden; 
+    display: flex; /* for horizontal layout */
+    align-items: center;
+    justify-content: space-between; /* this pushes items to the edges */
+    flex-wrap: wrap; /* this allows wrapping on smaller screens */
+}
+.inner-header h1 {
+    float: left;
+    font-size: 2rem;
+    margin: 0 0 0 0; /* this means top, right, bottom, left */
+    letter-spacing: 2px;
+    color: #F0F3F5;
+}
+/* navigation */
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex; /* for horizontal layout */
+    gap: 1.5rem;
+}
+.nav-list a {
+    display: inline-block; /* for horizontal layout */
+    color: #F0F3F5;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* intro section */
+.intro {
+    margin-bottom: 2rem;
+}
+.intro-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* maintain aspect ratio */
+    display: block; 
+    margin: 1.5rem auto 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Garamond, Georgia, 'Times New Roman', Times, serif*/
+    background: #F0F3F5;
+    color: #19535F;
+}
+#main-content {
+    float: right;
+    width: 73%;
+    padding: 1rem 2rem;
+}
+#main-sidebar {
+    float: left;
+    width: 25%;
+    color: #0B7A75;
+    padding: 1rem;
+    font-size: larger;
+}
+#main-sidebar a {
+    color: #0B7A75;
+    text-decoration: none;
+}
+#main-sidebar a:hover,
+a:hover {
+    color: #D7C9AA;
+    background: #19535F;
+    transition: color 0.2s;
+    border-radius: 4px;
+    padding: 0.2rem 0.2rem;
+}
+#main-content {
+    float: right;
+    width: 60%;
+}
+footer {
+    background: #7B2D26;
+    color: #F0F3F5;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    /* lock to bottom of page: */
+    bottom: 0;
+    clear: both;
+}
