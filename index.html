@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Site Home Page</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Samarkand Home Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/images/logo.jpg" alt="Logo">
-        <h1>Site Title</h1>
-    </header>
-    <section class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-        </ul>
-    </section>
-    <div class="content">
-        <aside>
-            <h2>Sidebar</h2>
-            <p>Links or info here.</p>
-        </aside>
-        <main>
-            <h2>Welcome to the Home Page</h2>
-            <p>Main content goes here.</p>
-        </main>
+    <div class="page-container">
+        <!--HEADER SECTION - logo(left), site title(center), nav menu(right)-->
+        <header id="site-header">
+            <div class="inner-header"> <!--wrapper for logo, title and nav-->
+                <div class="logo">
+                    <img src="./assets/images/logo.jpg" alt="Logo"> <!--LOGO-->
+                </div>
+
+                <h1 class="site-title">Samarkand Travel Guide</h1> <!--TITLE-->
+
+                <!-- navigation menu - make horizontal in css-->
+                <!-- use the :hover effect here too since its part of the challenge!-->
+                <nav id="nav-main">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Attractions</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="culture.html">Culture & Tips</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--MAIN CONTENT (main + sidebar)-->
+        <div class="content-container">
+            <main id="main-content">
+                <section class="intro">
+                    <!-- need the images / they r missing -->
+                    <img class="intro-img" src="assets/images/registan.jpg" alr="Registan square, Samarkand">
+
+                    <p> <!--para 1-->
+                        Welcome to the Samarkand Travel Guide, your starting point to explore one of Uzbekistan's most
+                        historic and culturally rich cities.
+                        Samarkand is a place where stunning Islamic architecture meets bustling bazaars and centuries of
+                        history.
+                        This guide will help you discover the best attractions, foods, and cultural experiences.
+                    </p>
+                    <p> <!--para 2-->
+                        From ancient madrasas to traditional markets, Samarkand has something for everyone. Visit
+                        Registan square,
+                        admire the intricate mosaics at Shah-i-Zinda, or explore the Gur-e-Amir mausoleum.
+                    </p>
+                </section>
+
+                <!--more content can go here i think if we need-->
+            </main>
+
+            <!--SIDE BAR section-->
+            <aside id="site-sidebar">
+                <nav>
+                    <ul class="sidebar-links">
+                        <li><a href="about.html">Attractions</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="culture.html">Culture & Tips</a></li>
+                    </ul>
+                </nav>
+
+                <section>
+                    <h2>Top 3 Thing To Pack</h2>
+                    <ol>
+                        <li>Lightweight clothes</li>
+                        <li>Sunscreen & sunglasses</li>
+                        <li>Power adapter</li>
+                    </ol>
+                </section>
+            </aside>
+        </div>
+
+        <!--FOOTER -->
+        <footer id="site-footer">
+            <p>&copy; 2025 Samarkand Travel Guide</p>
+        </footer>
     </div>
-    <footer>
-        &copy; 2025 Group 4 for ISTE140 Web & Mobile I
-    </footer>
 </body>
+
 </html>
