@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Samarkand Attractions</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!--same header as homepage-->
+    <header id="site-header">
+        <div class="inner-header"> <!--wrapper for logo, title and nav-->
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo"> <!--LOGO-->
+            </div>
+
+            <h1 class="site-title">Samarkand Travel Guide</h1> <!--TITLE-->
+
+            <!-- navigation menu - make horizontal in css-->
+            <!-- use the :hover effect here too since its part of the challenge!-->
+            <nav id="nav-main">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Attractions</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="culture.html">Culture & Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <main id="main-content">
+            <section>
+                <h2>Famous Landmarks</h2>
+                <p> <!--para 1-->
+                    Samarkand offers world-famous landmarks and unique experiences.
+                    Its blend of historic architecture and vibrant culture makes it a destination like no other.
+                </p>
+                <p> <!--para 2-->
+                    Visit Registan for its stunning madrasas, admire the tomb of Timur at Gur-e-Amir, or stroll through
+                    Shah-i-Zinda's mausoleum complex.
+                    For a more traditional experience, explore local bazaars filled with spices, textiles, and
+                    handcrafted souvenirs.
+                </p>
+                <!--IMAGES + DESC -> place them horizontally under the paragraph i think-->
+                <div class="image-row">
+                    <figure>
+                        <img src="assets/images/registan.jpeg">
+                        <figcaption>Registan</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets\images\gur-e-amir.jpeg">
+                        <figcaption>Gur-e-Amir</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets\images\shahizinda.jpg">
+                        <figcaption>Shah-i-Zinda</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/images/bibikhaynam.jpg">
+                        <figcaption>Bibi-Khaynam Mosque</figcaption>
+                    </figure>
+                </div>
+
+                <!-- the attraction info table -->
+                <section class="attractions-table">
+                    <table>
+                        <caption>Attraction Information</caption>
+                        <thead>
+                            <tr>
+                                <th>Attraction</th>
+                                <th>Opening Hours</th>
+                                <th>Entry Fee (UZS)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Registan</td>
+                                <td>9am-7pm</td>
+                                <td>50,000+</td>
+                            </tr>
+                            <tr>
+                                <td>Gur-e-Amir</td>
+                                <td>9am-6pm</td>
+                                <td>40,000</td>
+                            </tr>
+                            <tr>
+                                <td>Shah-i-Zinda</td>
+                                <td>8am-7pm</td>
+                                <td>25,000</td>
+                            </tr>
+                            <tr>
+                                <td>Bibi-Khaynam</td>
+                                <td>9am-6pm</td>
+                                <td>25,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+
+        <!--SIDE BAR section-->
+            <aside id="main-sidebar">
+                <h2>Quick Links:</h2>
+                <nav>
+                    <ul class="sidebar-links">
+                        <li><a href="about.html">Link in Attractions</a></li>
+                        <li><a href="food.html">Link in Food</a></li>
+                        <li><a href="culture.html">Link in Culture & Tips</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+    </div>
+    <!--FOOTER -->
+    <footer>
+        <p>&copy; 2025 Samarkand Travel Guide<br>by Tania, Rayan & Mira</p>
+    </footer>
+</body>
+
+</html>
