@@ -7,6 +7,7 @@ html {  /* base style */
     background: #F0F3F5;
     min-height: 100vh; /* full viewport height */
     box-sizing: border-box;
+    width: 100%;
 }
 /* header */
 #site-header {
@@ -58,12 +59,23 @@ html {  /* base style */
 .intro {
     margin-bottom: 2rem;
 }
-.intro-img {
+.img-float-left {
+    float: left;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
+    height: auto; /* maintain aspect ratio */
+    display: block;
+    margin: 1rem 1.5rem 0.5rem 0; /* top, right, bottom, left */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.img-float-right {
+    float: right;
+    width: 100%;
+    max-width: 400px;
     height: auto; /* maintain aspect ratio */
     display: block; 
-    margin: 1.5rem auto 1.5rem auto;
+    margin: 1rem 0rem 0.5rem 1.5rem; /* top, right, bottom, left */
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
