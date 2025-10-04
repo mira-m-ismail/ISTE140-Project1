@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Samarkand Food</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!--same header as homepage-->
+    <header id="site-header">
+        <div class="inner-header"> <!--wrapper for logo, title and nav-->
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo"> <!--LOGO-->
+            </div>
+
+            <h1 class="site-title">Samarkand Travel Guide</h1> <!--TITLE-->
+
+            <!-- navigation menu - make horizontal in css-->
+            <!-- use the :hover effect here too since its part of the challenge!-->
+            <nav id="nav-main">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Attractions</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="culture.html">Culture & Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <main id="main-content">
+            <section>
+                <h2>Samarkand Food Scene</h2>
+                <p> <!--para 1-->
+                    Samarkand's food scene reflects its rich history and cultural diversity.
+                    From street snacks to traditional dishes, every meal is a culinary experience.
+                </p>
+
+                <p> <!-- wrap around the pics-->
+                    Try Plov, a spiced rice dish, or enjoy Samsa, flaky stuffed pastries. Shurpa, a hearty soup,
+                    is perfect for a warm meal, while adventurous travelers can sample local desserts and street treats.
+                </p>
+                
+                <!--IMAGES + DESC-->
+                <div class="image-row">
+                    <figure>
+                        <img src="assets/images/plov.jpg">
+                        <figcaption>Plov</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets\images\samsa.jpg">
+                        <figcaption>Samsa</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets\images\shurpa.jpg">
+                        <figcaption>Shurpa</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Dish prices table-->
+                 <table>
+                    <caption>Dish Prices (UZS)</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Average Price (UZS)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Plov</td> <td>30,000-50,000</td></tr>
+                        <tr><td>Samsa</td> <td>5,000-10,000</td></tr>
+                        <tr><td>Shurpa</td> <td>15,000-25,000</td></tr>
+                        <tr><td>Local desserts</td> <td>10,000-20,000</td></tr>
+                    </tbody>
+                 </table>
+            </section>
+        </main>
+
+        <!--SIDE BAR section-->
+            <aside id="main-sidebar">
+                <h2>Quick Links:</h2>
+                <nav>
+                    <ul class="sidebar-links">
+                        <li><a href="about.html">Link in Attractions</a></li>
+                        <li><a href="food.html">Link in Food</a></li>
+                        <li><a href="culture.html">Link in Culture & Tips</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+        <!--FOOTER -->
+        <footer id="site-footer">
+            <p>&copy; 2025 Samarkand Travel Guide<br>by Tania, Rayan & Mira</p>
+        </footer>
+    </div>
+</body>
