@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Samarkand Attractions</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" />
 </head>
-
 <body>
-    <!--same header as homepage-->
-    <header id="site-header">
-        <div class="inner-header"> <!--wrapper for logo, title and nav-->
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo"> <!--LOGO-->
+    <div class="page-container">
+        <div id="site-header">
+        <!--HEADER SECTION - logo(left), site title(center), nav menu(right)-->
+        <header>
+            <div class="inner-header"> <!--wrapper for logo, title and nav-->
+                <div class="logo-container"> <!--logo container-->
+                    <img src="./assets/images/logo.png" class="logo" alt="Logo"> <!--LOGO-->
+                </div>
+
+                <h1>Samarkand Travel Guide</h1> <!--TITLE-->
+
+                <nav id="nav-main">
+                    <ul class="nav-list">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">Attractions</a>
+                        <a href="food.html">Food</a>
+                        <a href="culture.html">Culture & Tips</a>
+                    </ul>
+                </nav>
             </div>
-
-            <h1 class="site-title">Samarkand Travel Guide</h1> <!--TITLE-->
-
-            <!-- navigation menu - make horizontal in css-->
-            <!-- use the :hover effect here too since its part of the challenge!-->
-            <nav id="nav-main">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Attractions</a></li>
-                    <li><a href="food.html">Food</a></li>
-                    <li><a href="culture.html">Culture & Tips</a></li>
-                </ul>
-            </nav>
+        </header>
         </div>
-    </header>
 
     <div class="content-container">
         <main id="main-content">
