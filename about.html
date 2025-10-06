@@ -15,7 +15,7 @@
         <header>
             <div class="inner-header"> <!--wrapper for logo, title and nav-->
                 <div class="logo-container"> <!--logo container-->
-                    <img src="./assets/images/logo.png" class="logo" alt="Logo"> <!--LOGO-->
+                    <img src="./assets/images/logo.png" href="index.html" class="logo" alt="Logo"> <!--LOGO-->
                 </div>
 
                 <h1>Samarkand Travel Guide</h1> <!--TITLE-->
@@ -33,7 +33,7 @@
     </div>
 
     <div class="content-container">
-        <main id="main-content">
+        <main id="sub-content">
             <section>
                 <h2>Famous Landmarks</h2>
                 <p> <!--para 1-->
@@ -48,24 +48,25 @@
                 </p>
                 <!--IMAGES + DESC -> place them horizontally under the paragraph i think-->
                 <div class="image-row">
+                    
                     <figure>
-                        <img src="assets/images/registan.jpg" alt="Registan">
-                        <figcaption>Registan</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="assets\images\gur-e-amir.jpg" alt="Gure-e-Amir">
+                        <img class="body-images" src="assets\images\gur-e-amir.jpg" alt="Gure-e-Amir">
                         <figcaption>Gur-e-Amir</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="assets\images\shahizinda.jpg" alt="Shah-i-zinda">
+                        <img class="body-images" id="shahizinda" src="assets\images\shahizinda.jpg" alt="Shah-i-Zinda">
                         <figcaption>Shah-i-Zinda</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="assets/images/bibikhaynam.jpg" alt="Bibi khaynam mosque">
+                        <img class="body-images" src="assets/images/bibikhaynam.jpg" alt="Bibi Khaynam Mosque">
                         <figcaption>Bibi-Khaynam Mosque</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="body-images" src="assets/images/registan.jpg" alt="Registan">
+                        <figcaption>Registan</figcaption>
                     </figure>
                 </div>
 
@@ -108,13 +109,13 @@
         </main>
 
         <!--SIDE BAR section-->
-        <aside id="main-sidebar">
+        <aside id="sub-sidebar">
             <h2>Quick Links:</h2>
             <nav>
                 <ul class="sidebar-links">
-                    <li><a href="about.html">Link in Attractions</a></li>
-                    <li><a href="food.html">Link in Food</a></li>
-                    <li><a href="culture.html">Link in Culture & Tips</a></li>
+                    <li><a href="about.html#shahizinda">Reknowned Necropolis in Samarkand</a></li>
+                        <li><a href="food.html#plov">Try the iconic Plov</a></li>
+                        <li><a href="culture.html#navruzfest">Embrace Uzbek Culture</a></li>
                 </ul>
             </nav>
         </aside>
