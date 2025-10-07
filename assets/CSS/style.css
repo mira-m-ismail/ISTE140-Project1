@@ -4,10 +4,10 @@ html {
     font-size: 16px;
 }
 
-
+body,
 .page-container {
     margin: 0 auto;
-    background: #F0F3F5;
+    background: linear-gradient(rgba(240,243,245,0.95), rgba(240,243,245,0.95)), url('../images/pattern.webp') center/cover no-repeat;
     min-height: 100vh;
     /* full viewport height */
     box-sizing: border-box;
