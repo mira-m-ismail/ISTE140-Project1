@@ -137,6 +137,8 @@ body {
     /* maintain aspect ratio */
     margin: 1rem 0 0 0;
     border-radius: 6px;
+    height: 220px;            /* fixed height for all images */
+    object-fit: cover;   
 }
 
 .image-row figcaption {
