@@ -2,6 +2,7 @@ html {  /* base style */
     box-sizing: border-box;
     font-size: 16px;
 }
+
 .page-container {
     margin: 0 auto;
     background: #F0F3F5;
@@ -15,6 +16,7 @@ html {  /* base style */
     position: sticky;
     width: 100% !important;
 }
+
 .logo {
     float: left;
     width: 70px;
@@ -26,8 +28,9 @@ html {  /* base style */
 .logo-container {
     padding: 1rem;
 }
+
 .inner-header {
-    background: linear-gradient(135deg, #7B2D26, #0B7A75);
+    background: linear-gradient(135deg, #7B2D26,#7B2D26,#0B7A75);
     padding: 0.5rem 2rem 0.5rem 2rem; /* top, right, bottom, left */
     overflow: hidden; 
     display: flex; /* for horizontal layout */
@@ -35,10 +38,12 @@ html {  /* base style */
     justify-content: space-between; /* this pushes items to the edges */
     flex-wrap: wrap; /* this allows wrapping on smaller screens */
 }
+
 .inner-header:hover {
     padding: 1rem 2rem 1rem 2rem;
     transition: padding 0.3s;
 }
+
 .inner-header h1 {
     float: left;
     font-size: 2rem;
@@ -46,6 +51,7 @@ html {  /* base style */
     letter-spacing: 2px;
     color: #F0F3F5;
 }
+
 /* navigation */
 .nav-list {
     margin: 0;
@@ -53,6 +59,7 @@ html {  /* base style */
     display: flex; /* for horizontal layout */
     gap: 1.5rem;
 }
+
 .nav-list a {
     display: inline-block; /* for horizontal layout */
     color: #F0F3F5;
@@ -63,6 +70,7 @@ html {  /* base style */
 .intro {
     margin-bottom: 2rem;
 }
+
 .img-float-left {
     float: left;
     width: 100%;
@@ -73,6 +81,7 @@ html {  /* base style */
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 .img-float-right {
     float: right;
     width: 100%;
@@ -90,46 +99,113 @@ body {
     background: #F0F3F5;
     color: #19535F;
 }
-figcaption {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 0.5rem;
-    text-align: left;
+/*Images Styling*/
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-.body-images {
+
+.image-row figure {
+    flex: 1 1 30%;
+    margin: 0;
+}
+
+.image-row img {
     width: 100%;
-    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     height: auto; /* maintain aspect ratio */
     margin: 1rem 0 0 0;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+.image-row figcaption {
+    text-align: center;
+    margin-top: 0.25rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    color: #19535F;
+}
+/*Table Styling*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e6f2ff;
+    margin-bottom: 1.5rem;
+}
+
+table caption {
+    caption-side: top;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #19535F;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #d8d9da;
+    color: #7B2D26;
+}
+
+table td {
+    background-color: #e6f2ff;
+}
+
+table tr:hover td {
+    background-color: #cce6ff !important;
+    transition: background-color 0.3s;
+}
+
 #main-content {
     float: right;
     width: 73%;
     padding: 1rem 2rem;
 }
+
 #sub-content {
     float: left;
     width: 65%;
     padding: 1rem 2rem;
 }
+
 #main-sidebar {
     float: left;
     width: 25%;
     color: #0B7A75;
     padding: 1rem;
 }
+
 #sub-sidebar {
     float: right;
     width: 25%;
     color: #0B7A75;
     padding: 1rem;
 }
+
+/* Fun Facts Sidebar Section */
+aside section {
+    border: 1px solid #ccc;      /* light gray border around the section */
+    padding-right: 1rem;              /* space inside the border */
+    padding-left: 1rem;               /* space inside the border */
+    margin-bottom: 1.5rem;       /* space below the section */
+    border-radius: 8px;          /* rounded corners */
+    background-color: #f9f9f9;   /* optional light background */
+    font-size: 0.9rem;           /* slightly smaller font */
+    line-height: 1.5;            /* improves readability */
+}
+
 aside a {
     color: #0B7A75;
     text-decoration: none;
 }
+
 aside a:hover,
 a:hover {
     color: #D7C9AA;
@@ -138,16 +214,19 @@ a:hover {
     border-radius: 4px;
     /*padding: 0.2rem 0.2rem;*/
 }
+
 #main-content {
     float: right;
     width: 60%;
 }
+
 aside h2:hover {
     color: #19535F;
     transition: color 0.2s;
 }
+
 footer {
-    background: #7B2D26;
+    background: linear-gradient(135deg,#0B7A75, #7B2D26);
     color: #F0F3F5;
     text-align: center;
     padding: 1rem 0;
