@@ -288,3 +288,38 @@ footer {
     border-radius: 20px;      /* rounds the image itself */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* responsive design */
+@media (max-width: 768px) {
+    .inner-header {
+        flex-direction: column; /* stack items vertically */
+        align-items: flex-start; /* align items to the start */
+    }
+
+    .nav-list {
+        flex-direction: column; /* stack nav items vertically */
+        gap: 0.5rem; /* reduce gap for vertical layout */
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    #main-content, #sub-content, #main-sidebar, #sub-sidebar {
+        width: 100%;
+        float: none; /* remove float */
+        padding: 1rem 0; 
+    }
+
+    .img-float-left, .img-float-right {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .image-row {
+        flex-direction: column; /* stack images vertically */
+    }
+
+    .image-row figure {
+        flex: 1 1 100%;
+    }
+}
